@@ -1,20 +1,24 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 
 const Home = () => {
 
-  const activeTabHandler=({isActive})=>{
-    return isActive ? 'active-tab' : 'inactive-tab';
-  }
+ 
   return (
     <div>
       <h1>
         Home page 
-        
+        </h1>
+        <div className='home-user'>
+          <div>
+            <Link to='/user/1'> <h3>User 1</h3></Link>
+            <Link to='/user/2'> <h3>User 2</h3></Link>
+          </div>
         <div>
-        <NavLink to='about' className={activeTabHandler}>About</NavLink>
+          <Outlet />
         </div>
-      </h1>
+        </div>
+      
     </div>
   )
 }

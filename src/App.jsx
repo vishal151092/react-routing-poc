@@ -17,22 +17,7 @@ function App() {
   return (
     <>
 
-<BrowserRouter>
-    <Header />
-    
-    <Routes>
 
-        <Route path='/' element={ <Home />} />
-        
-        <Route path='/about' element={<About />}/>
-        
-        <Route path='/help' element={<Help/>}/>
-
-        <Route path='*' element={<div> Page not found </div>} />
-
-    </Routes>
-
-</BrowserRouter>
 
 
     </>

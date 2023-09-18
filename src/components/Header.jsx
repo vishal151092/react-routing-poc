@@ -10,11 +10,11 @@ const Header = () => {
   return (
     <div>
         <ul>
-          <li><NavLink to='' className={activeTabHandler}>Home</NavLink></li>
+          {/* <li><NavLink to='' className={activeTabHandler}>Home</NavLink></li>
 
           <li><NavLink to='about' className={activeTabHandler}>About</NavLink></li>
 
-          <li><NavLink to='help' className={activeTabHandler}>Help</NavLink></li>
+          <li><NavLink to='help' className={activeTabHandler}>Help</NavLink></li> */}
         </ul>
     </div>
   )
